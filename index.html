@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ro-xploit 6.0 Forum</title>	
-		<link href="./asset.css" rel="stylesheet" type="text/css">
+		<title>Ro-xploit 6.0 Forum</title>
+		<link rel="stylesheet" href="./asset.css" >
 	</head>
 	<body>
 		<audio id = "theme" autoplay loop>
@@ -21,6 +21,7 @@
 				<div class="thread-title">Title</div>
 				<div class="thread-author">Something here</div>
 				<div class="thread-content">This is a sample forum thread. More content would go here soon...</div>
+				<img src="./noFilter (8).png" alt="poop">
 			</div>
 			<div class="forum-thread">
 				<div class="thread-title">Price of Ro-xploit 6.0</div>
@@ -38,6 +39,17 @@
 				<a href="" style="color: #ffffff; text-shadow: 0 0 10px #4B96FF;">Download</a>
 			</div>
 		</div>
-		<script src="script.js"></script>
+		<script>/* -------- JAVASCRIPT DOCUMENT -------- */
+/* ------------ REMOVE BLUR ------------ */
+function removeBlur() {
+    document.querySelector(".overlay").style.display = "none";
+    document.querySelector(".header").style.filter = "blur(0px)";
+    document.querySelector(".forum-container").style.filter = "blur(0px)";
+}
+/* ------------ WHEN CLICKED ------------ */
+window.addEventListener("click", () => {
+    document.getElementById("theme").play()
+})
+/* -------- JAVASCRIPT DOCUMENT -------- */</script>
 	</body>
 </html>
