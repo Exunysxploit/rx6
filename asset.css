@@ -1,21 +1,11 @@
-/* ------------ CSS Document ------------ */
-/* ---------------- BODY ---------------- */
 body {
 	margin: 0;
 	padding: 0;
 	animation: colorChange 10s linear infinite;
-	background-image: linear-gradient(
-		135deg,
-		rgb(26, 50, 86),
-		rgb(26, 50, 86),
-		rgb(0, 0, 0),
-		rgb(0, 0, 0),
-		rgb(26, 50, 86),
-		rgb(26, 50, 86),
-		rgb(0, 0, 0)
-	);
+	background-image: linear-gradient(135deg, rgb(26, 50, 86), rgb(26, 50, 86), rgb(0, 0, 0), rgb(0, 0, 0), rgb(26, 50, 86), rgb(26, 50, 86), rgb(0, 0, 0));
 	background-size: 600% 100%;
 }
+
 @keyframes colorChange {
 	0% {
 		background-position: 0% 50%;
@@ -24,7 +14,16 @@ body {
 		background-position: 100% 50%;
 	}
 }
-/* -------------- OVERLAY -------------- */
+
+img {
+	padding: 5px;
+	width: 150px;
+	transition: transform 0.3s ease;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .overlay {
 	position: absolute;
 	top: 0;
@@ -37,7 +36,7 @@ body {
 	align-items: center;
 	z-index: 1;
 }
-/* --------------- HEADER --------------- */
+
 .header {
 	text-align: center;
 	color: #000000;
@@ -48,44 +47,43 @@ body {
 	filter: blur(5px);
 	transition: filter 0.3s ease-in-out;
 }
-/* ---------- FORUM CONTAINER ---------- */
+
 .forum-container {
 	width: 80%;
 	margin: 20px auto;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding: 20px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 255, 1);
+	box-shadow: 0 0 10px rgba(75, 150, 255, 1);
 	filter: blur(5px);
 	transition: filter 0.3s ease-in-out;
 }
-/* ----------- FORUM THREAD ----------- */
+
 .forum-thread {
 	border-bottom: 1px solid #4B96FF;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 }
-/* ------------ THREAD TITLE ------------ */
+
 .thread-title {
 	font-size: 24px;
 	font-weight: bold;
 	color: #4B96FF;
 	text-shadow: 0 0 5px #000000;
 }
-/* ------------ THREAD AUTHOR ---------- */
+
 .thread-author {
 	font-style: italic;
 	color: #4B96FF;
 	text-shadow: 0 0 5px #4B96FF;
 }
-/* ------------ THREAD CONTENT --------- */
+
 .thread-content {
-		margin-top: 10px;
-		color: #ffffff;
-	}
-/* ------------ NEW THREAD ------------ */
+	margin-top: 10px;
+	color: #ffffff;
+}
+
 .new-thread {
 	text-align: center;
 	margin-top: 20px;
 }
-/* ------------ CSS Document ------------ */
