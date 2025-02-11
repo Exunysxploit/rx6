@@ -1,0 +1,91 @@
+/* ------------ CSS Document ------------ */
+/* ---------------- BODY ---------------- */
+body {
+	margin: 0;
+	padding: 0;
+	animation: colorChange 10s linear infinite;
+	background-image: linear-gradient(
+		135deg,
+		rgb(26, 50, 86),
+		rgb(26, 50, 86),
+		rgb(0, 0, 0),
+		rgb(0, 0, 0),
+		rgb(26, 50, 86),
+		rgb(26, 50, 86),
+		rgb(0, 0, 0)
+	);
+	background-size: 600% 100%;
+}
+@keyframes colorChange {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+/* -------------- OVERLAY -------------- */
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+/* --------------- HEADER --------------- */
+.header {
+	text-align: center;
+	color: #000000;
+	text-shadow: 0 0 60px #4B96FF;
+	font-size: 20px;
+	margin: 1px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	filter: blur(5px);
+	transition: filter 0.3s ease-in-out;
+}
+/* ---------- FORUM CONTAINER ---------- */
+.forum-container {
+	width: 80%;
+	margin: 20px auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 255, 1);
+	filter: blur(5px);
+	transition: filter 0.3s ease-in-out;
+}
+/* ----------- FORUM THREAD ----------- */
+.forum-thread {
+	border-bottom: 1px solid #4B96FF;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+/* ------------ THREAD TITLE ------------ */
+.thread-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #4B96FF;
+	text-shadow: 0 0 5px #000000;
+}
+/* ------------ THREAD AUTHOR ---------- */
+.thread-author {
+	font-style: italic;
+	color: #4B96FF;
+	text-shadow: 0 0 5px #4B96FF;
+}
+/* ------------ THREAD CONTENT --------- */
+.thread-content {
+		margin-top: 10px;
+		color: #ffffff;
+	}
+/* ------------ NEW THREAD ------------ */
+.new-thread {
+	text-align: center;
+	margin-top: 20px;
+}
+/* ------------ CSS Document ------------ */
