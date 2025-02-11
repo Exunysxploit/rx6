@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ro-xploit 6.0 Forum</title>
+		<link href="./asset.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<audio id = "theme" autoplay loop>
+			<source src="https://raw.githubusercontent.com/Ro-xploit 6.0/executor/main/theme.mp3">
+		</audio>
+		<div class="overlay">
+			<div class="overlay" onclick="removeBlur()"></div>
+		</div>
+		<div class="header">
+			<h1>Ro-xploit 6.0</h1>
+		</div>
+		<div class="forum-container">
+			<div class="forum-thread">
+				<div class="thread-title">Title</div>
+				<div class="thread-author">Something here</div>
+				<div class="thread-content">This is a sample forum thread. More content would go here soon...</div>
+			</div>
+			<div class="forum-thread">
+				<div class="thread-title">Price of Ro-xploit 6.0</div>
+				<div class="thread-author">Why is Ro-xploit 6.0 free ?</div>
+				<div class="thread-content">Ro-xploit 6.0 was pretty much a passion project so money wasn't in mind Its very easy to bring updates and keeping Ro-xploit 6.0 running does not cost any money the only monetization at the moment is the linkvertise on the download link which is really simple and fast and you keep the auto updating software forever.️</div>
+				<br>
+				<div class="thread-title">Our discord server</div>
+				<div class="thread-author">What is this server ?</div>
+				<div class="thread-content">This server is a roblox executor part of exploiting in the roblox community we basically give a free executor made with passion to others for free so other exploiters can use our executor for free instead of paying for others.️</div>
+				<div class="new-thread">
+					<a href="https://discord.gg/Ro-xploit 6.0" style="color: #ffffff; text-shadow: 0 0 10px #4B96FF;">Join the server</a>
+				</div>
+			</div>
+			<div class="new-thread">
+				<a href="" style="color: #ffffff; text-shadow: 0 0 10px #4B96FF;">Download</a>
+			</div>
+		</div>
+		<script>
+			function removeBlur() {
+				document.querySelector('.overlay').style.display = "none";
+				document.querySelector('.header').style.filter = "blur(0px)";
+				document.querySelector('.forum-container').style.filter = "blur(0px)";
+			}
+			window.addEventListener("click", () => {
+				document.getElementById("theme").play()
+			})
+		</script>
+	</body>
+</html>
