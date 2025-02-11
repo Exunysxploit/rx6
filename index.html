@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ro-xploit 6.0 Forum</title>
+		<title>Ro-xploit 6.0 Forum</title>	
 		<link href="./asset.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<audio id = "theme" autoplay loop>
-			<source src="https://raw.githubusercontent.com/Ro-xploit 6.0/executor/main/theme.mp3">
+			<source src="https://raw.githubusercontent.com/Exunysxploit/executor/main/theme.mp3">
 		</audio>
 		<div class="overlay">
 			<div class="overlay" onclick="removeBlur()"></div>
@@ -38,15 +38,6 @@
 				<a href="" style="color: #ffffff; text-shadow: 0 0 10px #4B96FF;">Download</a>
 			</div>
 		</div>
-		<script>
-			function removeBlur() {
-				document.querySelector('.overlay').style.display = "none";
-				document.querySelector('.header').style.filter = "blur(0px)";
-				document.querySelector('.forum-container').style.filter = "blur(0px)";
-			}
-			window.addEventListener("click", () => {
-				document.getElementById("theme").play()
-			})
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
